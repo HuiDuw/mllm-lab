@@ -1,0 +1,33 @@
+{
+  // ===== 解释器：锁死到 mllm 环境（避免误选系统 3.12 / base 3.14）=====
+  "python.defaultInterpreterPath": "/home/huiduw/miniconda3/envs/mllm/bin/python",
+
+  // 集成终端一打开就自动 activate mllm，提示符直接是 (mllm)
+  "python.terminal.activateEnvironment": true,
+
+  // ===== Jupyter =====
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "jupyter.askForKernelRestart": false,
+
+  // ===== 编辑体验 =====
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.formatOnSave": false,
+  "editor.rulers": [100],
+
+  // 大文件（模型权重、日志）不进搜索/监视，否则 WSL 会被拖慢
+  "search.exclude": {
+    "**/models": true,
+    "**/outputs": true,
+    "**/*.safetensors": true,
+    "**/__pycache__": true
+  },
+  "files.watcherExclude": {
+    "**/models/**": true,
+    "**/outputs/**": true,
+    "**/__pycache__/**": true
+  },
+
+  // Python 分析：不要扫描模型目录
+  "python.analysis.exclude": ["**/models", "**/outputs", "**/node_modules"]
+}

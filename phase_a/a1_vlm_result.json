@@ -1,0 +1,65 @@
+{
+  "timestamp": "2026-09-23 10:09:34",
+  "args": {
+    "image": null,
+    "repeat": 2,
+    "max_new_tokens": 256,
+    "max_pixels": 401408,
+    "min_pixels": 200704,
+    "online": false
+  },
+  "gpu_mem_used_before_mib": "1285",
+  "env": {
+    "torch": "2.13.0+cu130",
+    "cuda_available": true,
+    "arch_list": [
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ],
+    "device": "NVIDIA GeForce RTX 5060 Ti",
+    "capability": [
+      12,
+      0
+    ],
+    "bitsandbytes": "0.50.2",
+    "nf4_abs_max_err": 0.578125,
+    "nf4_rel_max_err": 0.12091503292322159,
+    "nf4_rel_rmse": 0.09201190620660782
+  },
+  "image": "/home/huiduw/mllm-lab/phase_a/assets/test_card.png",
+  "load_time_s": 6.595638723999855,
+  "runs": [
+    {
+      "input_tokens": 490,
+      "output_tokens": 84,
+      "ttft_s": 14.75506943099981,
+      "total_s": 17.33446439499994,
+      "decode_tok_per_s": 32.17808872173785,
+      "peak_allocated_mib": 2424.2392578125,
+      "peak_reserved_mib": 2526.0,
+      "answer": "1) 图里有三种形状：一个红色的正方形、一个蓝色的圆和一个绿色的三角形。\n\n2) 从上到下逐行读出图中的文字：\n   - MLLM LAB 2026\n   - square = red\n   - circle = blue\n   - triangle = green\n\n3) 三个形状中，三角形在图片最右边。"
+    },
+    {
+      "input_tokens": 490,
+      "output_tokens": 84,
+      "ttft_s": 0.33031567499983794,
+      "total_s": 3.0319346500000393,
+      "decode_tok_per_s": 30.722319012433577,
+      "peak_allocated_mib": 2424.2392578125,
+      "peak_reserved_mib": 2526.0,
+      "answer": "1) 图里有三种形状：一个红色的正方形、一个蓝色的圆和一个绿色的三角形。\n\n2) 从上到下逐行读出图中的文字：\n   - MLLM LAB 2026\n   - square = red\n   - circle = blue\n   - triangle = green\n\n3) 三个形状中，三角形在图片最右边。"
+    }
+  ],
+  "report": {
+    "ttft_s": 0.33031567499983794,
+    "decode_tok_per_s": 30.722319012433577,
+    "peak_allocated_mib": 2424.2392578125,
+    "peak_reserved_mib": 2526.0,
+    "output_tokens": 84
+  },
+  "gpu_mem_used_after_mib": "3978"
+}

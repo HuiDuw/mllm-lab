@@ -1,0 +1,13 @@
+{
+  // 打开本仓库时 VS Code 会提示安装这些 ——
+  // 注意：若在 Remote-WSL 窗口里打开，提示会变成 "Install in WSL: Ubuntu-24.04"，
+  // 请务必选它（工作区扩展的扩展宿主跑在 WSL 里，装在 Windows 侧不起作用）。
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-python.debugpy",
+    "ms-toolsai.jupyter",
+    "ms-toolsai.jupyter-renderers",
+    "ms-vscode-remote.remote-wsl"
+  ]
+}
